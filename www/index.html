@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#10131c" />
+  <meta name="description" content="روز‌یار؛ برنامه‌ریز شخصی برای عادت‌ها، کنکور، کارآموزی و اهداف" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>روز‌یار ۱.۵ | دستیار شخصی</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">ر</div><div><strong>روز‌یار</strong><small>دستیار رشد روزانه</small></div></div>
+      <button class="app-icon-shortcut" data-go="home" aria-label="صفحه خانه"><img src="app-icon.svg" alt="آیکون روزیار" /></button>
+    </header>
+    <main id="view" class="view" aria-live="polite"></main>
+    <nav class="bottom-nav" aria-label="ناوبری اصلی">
+      <button data-page="home" class="nav-item active"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/></svg></span><small>خانه</small></button>
+      <button data-page="daily" class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/><path d="M20 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10"/></svg></span><small>روزانه</small></button>
+      <button data-page="calendar" class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h2m4 0h2m-8 3h2"/></svg></span><small>تقویم</small></button>
+      <button data-page="modules" class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></span><small>بخش‌ها</small></button>
+      <button data-page="profile" class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><small>پروفایل</small></button>
+    </nav>
+  </div>
+  <button class="fab" data-add-task aria-label="افزودن کار">＋</button>
+  <div id="toast" class="toast" role="status"></div>
+  <dialog id="modal" class="modal"><form method="dialog" id="modalForm"><div class="modal-head"><h3 id="modalTitle">افزودن</h3><button class="icon-btn" value="cancel" formnovalidate aria-label="بستن">✕</button></div><div id="modalBody"></div><div class="modal-actions"><button class="btn secondary" value="cancel" formnovalidate>انصراف</button><button class="btn primary" id="modalSave" value="default">ذخیره</button></div></form></dialog>
+  <script src="native-plugins.bundle.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "appId": "com.roozyar.personal",
+  "appName": "روزیار",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
